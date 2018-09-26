@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import GlobalStyle from '../GlobalStyle';
-import { TextButton } from '../Button';
+import Button, { TextButton } from '../Button';
 import colors from '../../colors';
 import { ShadowCard, CardImage } from '../Card';
 
-// Specify your global application style
 const AppStyled = styled.div``;
 
 const Header = styled.header`
@@ -20,24 +19,29 @@ const Header = styled.header`
   }
 `;
 
+const Section = styled.section`
+  padding: 0 20px;
+
+  ${Button} {
+    margin: 0 20px 20px 0;
+  }
+`;
+
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   ${ShadowCard} {
     width: 100%;
     @media (min-width: 600px) {
-      width: calc(50% - 40px);
-      margin: 20px;
+      width: calc(50% - 10px);
+      margin-bottom: 20px;
+
+      &:nth-of-type(2n + 1) {
+        margin-right: 20px;
+      }
     }
-  }
-`;
-
-const Article = styled.article`
-  padding: 0 20px;
-
-  ${ShadowCard} {
-    margin-bottom: 24px;
   }
 `;
 
@@ -47,14 +51,18 @@ export default () => (
       <Header>
         <h1>Styled components workshop</h1>
       </Header>
-      {/* <Button onClick={() => alert('My first styled button!')}>
-        My first styled-component
-      </Button>
-      <Button as="a" href="http://www.vg.no" size="large">
-        Another tag (link)
-      </Button> */}
-      <Article>
-        {/* <Card>Card</Card> */}
+      <Section>
+        <h2>Buttons</h2>
+        <Button onClick={() => alert('My first styled button!')}>Button</Button>
+        <Button as="a" href="http://www.vg.no">
+          Link
+        </Button>
+        <Button as="a" href="http://www.vg.no" size="large">
+          Large
+        </Button>
+      </Section>
+      <Section>
+        <h2>Cards</h2>
         <Cards>
           <ShadowCard hasImage>
             <CardImage image="https://picsum.photos/5512/3708?image=1081" />
@@ -77,7 +85,7 @@ export default () => (
             </TextButton>
           </ShadowCard>
         </Cards>
-      </Article>
+      </Section>
     </div>
     <GlobalStyle />
   </AppStyled>

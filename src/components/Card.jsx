@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import colors from '../colors';
 import { TextButton } from './Button/Button';
 
 export const Card = styled.div`
