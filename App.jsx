@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 
 import React, { Fragment } from 'react';
+import styled from 'styled-components';
+import GlobalStyle from '../GlobalStyle';
 
 export default () => (
   <Fragment>
@@ -13,5 +15,6 @@ export default () => (
     <section>
       <h2>?</h2>
     </section>
+    <GlobalStyle />
   </Fragment>
 );
