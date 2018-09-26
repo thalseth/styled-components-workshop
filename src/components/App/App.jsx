@@ -34,9 +34,10 @@ const Cards = styled.div`
 
   ${ShadowCard} {
     width: 100%;
+    margin-bottom: 20px;
+
     @media (min-width: 600px) {
       width: calc(50% - 10px);
-      margin-bottom: 20px;
 
       &:nth-of-type(2n + 1) {
         margin-right: 20px;
@@ -54,12 +55,15 @@ export default () => (
       <Section>
         <h2>Buttons</h2>
         <Button onClick={() => alert('My first styled button!')}>Button</Button>
-        <Button as="a" href="http://www.vg.no">
-          Link
+        <Button as="a" href="http://www.knowit.no">
+          Button - Anchor
         </Button>
-        <Button as="a" href="http://www.vg.no" size="large">
-          Large
+        <Button as="a" href="http://www.knowit.no" size="large">
+          Button - Large
         </Button>
+        <TextButton as="a" href="http://www.knowit.no">
+          TextButton
+        </TextButton>
       </Section>
       <Section>
         <h2>Cards</h2>
