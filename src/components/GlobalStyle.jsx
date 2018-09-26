@@ -1,7 +1,5 @@
 /* eslint-disable no-unused-vars */
-
 import { createGlobalStyle } from 'styled-components';
-import colors from '../colors';
 
 /* Specify / Override global style
   https://www.styled-components.com/docs/api#createglobalstyle
@@ -11,5 +9,3 @@ import colors from '../colors';
 /* 3. Set font-family to paragraph and headings */
 /* 4. Set max-width to 100% on img */
 /* 5. Include GlobalStyle in App */
-
-export default createGlobalStyle``;

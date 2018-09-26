@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { TextButton } from './Button/Button';
+import { TextButton } from './Button';
 
 export const Card = styled.div`
   border-radius: 4px;

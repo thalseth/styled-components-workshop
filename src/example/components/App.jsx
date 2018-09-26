@@ -1,9 +1,9 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../GlobalStyle';
-import Button, { TextButton } from '../Button';
-import colors from '../../colors';
-import { ShadowCard, CardImage } from '../Card';
+import Button, { TextButton } from './Button';
+import { ShadowCard, CardImage } from './Card';
+import { normal, healthy } from '../../../themes';
 
 const AppStyled = styled.div``;
 
@@ -47,7 +47,7 @@ const Cards = styled.div`
 `;
 
 export default () => (
-  <ThemeProvider theme={colors}>
+  <ThemeProvider theme={normal}>
     <AppStyled>
       <div className="App">
         <Header>

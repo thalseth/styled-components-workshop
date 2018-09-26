@@ -1,4 +1,4 @@
-export default {
+export const normal = {
   primaryColorDark: '#455A64',
   primaryColor: '#607D8B',
   primaryColorLight: '#CFD8DC',
@@ -9,12 +9,12 @@ export default {
   dividerColor: '#BDBDBD',
 };
 
-export const darkTheme = {
-  primaryColorDark: '#000',
-  primaryColor: '#fff',
-  primaryColorLight: '#CFD8DC',
-  primaryColorText: '#FFFFFF',
-  accentColor: '#FF4081',
+export const healthy = {
+  primaryColorDark: '#689F38',
+  primaryColor: '#8BC34A',
+  primaryColorLight: '#DCEDC8',
+  primaryColorText: '#212121',
+  accentColor: '#795548',
   primaryTextColor: '#212121',
   secondaryTextColor: '#757575',
   dividerColor: '#BDBDBD',

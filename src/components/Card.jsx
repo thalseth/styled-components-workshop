@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-vars */
-import styled from 'styled-components';
-
 /* 1. Create a card component with some pretty padding and stuff */
 /* 2. Create a card component with shadow extending the default Card */
 /* 3. Test your new cards in App */

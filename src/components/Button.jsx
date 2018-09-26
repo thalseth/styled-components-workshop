@@ -1,8 +1,3 @@
-/* eslint-disable no-unused-vars */
-
-import styled from 'styled-components';
-import colors from '../../colors';
-
 /* Create a button. Maybe your first styled-components 💅 *
 /* 1. Create a Button */
 /* 2. Use color variables to set color and background 🌈*/
