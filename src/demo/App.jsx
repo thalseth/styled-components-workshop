@@ -1,9 +1,9 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import GlobalStyle from '../GlobalStyle';
+import GlobalStyle from './GlobalStyle';
 import Button, { TextButton } from './Button';
 import { ShadowCard, CardImage } from './Card';
-import { normal, healthy } from '../../../themes';
+import { normal, healthy } from '../themes';
 
 const AppStyled = styled.div``;
 

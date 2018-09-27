@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import colors from '../../colors';
+import colors from '../colors';
 
 export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab:300,400');
