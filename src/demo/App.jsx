@@ -5,9 +5,9 @@ import Button, { TextButton } from './Button';
 import { ShadowCard, CardImage } from './Card';
 // eslint-disable-next-line
 import { normal, healthy } from '../themes';
+// import BestPractiseComponents from './BestPractiseComponents';
 
 const AppStyled = styled.div``;
-
 const Header = styled.header`
   background-color: ${props => props.theme.primaryColorDark};
   color: ${props => props.theme.primaryColorLight};
@@ -91,6 +91,7 @@ export default () => (
           </ShadowCard>
         </Cards>
       </Section>
+      {/* <BestPractiseComponents /> */}
       <GlobalStyle />
     </AppStyled>
   </ThemeProvider>
